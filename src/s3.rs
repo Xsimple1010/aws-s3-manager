@@ -136,7 +136,7 @@ mod aura_aws_s3_test {
         let s3_manager = setup();
 
         let url = s3_manager
-            .create_upload_url("test.png".to_string())
+            .create_upload_url("user_name-test.png".to_string())
             .await
             .unwrap();
 
