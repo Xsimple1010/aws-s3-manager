@@ -1,7 +1,7 @@
 use crate::common_types::UserIdentity;
 use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Deserialize, Serialize)]
 pub struct S3Entity {
     #[serde(rename = "s3SchemaVersion")]
     pub s3_schema_version: String,
@@ -13,7 +13,7 @@ pub struct S3Entity {
     pub object: S3Object,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Deserialize, Serialize)]
 pub struct Bucket {
     pub name: String,
 
@@ -23,7 +23,7 @@ pub struct Bucket {
     pub arn: String,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Deserialize, Serialize)]
 pub struct S3Object {
     pub key: String,
     pub size: u64,
