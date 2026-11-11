@@ -1,15 +1,15 @@
 [package]
 name = "aws-s3-manager"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2024"
 
 [dependencies]
 serde = { version = "1.0.219", features = ["derive"] }
-aws-config = {version = "1.8.14", features = ["rustls"]}
-aws-sdk-s3 = {version = "1.123.0", features = ["rustls"]}
+aws-config = {version = "1.13.2", features = ["rustls"]}
+aws-sdk-s3 = {version = "1.159.0", features = ["rustls"]}
 
 [dev-dependencies]
-image = "0.25.8"
+image = "0.25.10"
 dotenv = "0.15.0"
 tokio = { version = "1.47.1", features = ["full"] }
 reqwest = { version = "0.13.2", default-features = false, features = ["json"] }
